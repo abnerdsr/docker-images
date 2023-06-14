@@ -7,7 +7,7 @@ services:
         ports:
             - '80:80'
         volumes:
-            - 'minhapastalocal:/var/www/html' # Informe aqui o caminho da pasta local onde esta seu projeto
+            - './:/var/www/html' # Informe aqui o caminho da pasta local onde esta seu projeto
         networks:
             - apache
         depends_on:
